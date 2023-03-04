@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView tvMain;
     Button btnChangeMainText;
+    Button btnChangeMainTextColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +25,13 @@ public class MainActivity extends AppCompatActivity {
         btnChangeMainText.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 tvMain.setText("Viso gero!");
+            }
+        });
+
+        this.btnChangeMainTextColor = (Button) findViewById(R.id.btnChangeMainTextColor);
+        btnChangeMainTextColor.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                tvMain.setTextColor(Color.RED);;
             }
         });
     }
