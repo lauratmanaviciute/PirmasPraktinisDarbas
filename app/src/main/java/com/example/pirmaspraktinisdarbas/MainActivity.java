@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         this.btnChangeMainTextColor = (Button) findViewById(R.id.btnChangeMainTextColor);
         btnChangeMainTextColor.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                tvMain.setTextColor(Color.RED);;
+                tvMain.setTextColor(Color.parseColor("#ED1CE6"));
             }
         });
     }
